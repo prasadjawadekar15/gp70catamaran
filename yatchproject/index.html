@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--projecttitle--><title>WAKWAKKKKKKKKKyatch</title><!--projecttitle-end-->
+		<!--projectdescription--><meta name="description" content="New 3Sixty Virtual Tour Project"><!--projectdescription-end-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!-- Insert this line above script imports  -->
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+		
+		<script src="imagedata.js"></script>
+		<script src="jquery.js"></script>
+		<script src="three.min.js"></script>
+		<script src="panolens.min.js"></script>
+		
+		<!-- Insert this line after script imports -->
+		<script>if (window.module) module = window.module;</script>
+		
+		<style>
+		
+			
+						
+			/* SCROLLBAR STYLING */
+			/* width */
+			::-webkit-scrollbar {
+				width: 0.25em;
+				height: 0.25em;
+			}
+			/* Track */
+			::-webkit-scrollbar-track {
+				background: #2c3643; 
+			}
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+				background: #0d9e59; 
+				transition: background .5s;
+			}
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+				background: #00e075; 
+			}
+
+
+			html, body {
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background-color: #000;
+				color; black;
+			}
+
+			a:link, a:visited{
+				color: #bdc3c7;	
+			}
+
+			.fullwrapper{
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: black;
+			}
+			
+			#container {
+                width: 100%;
+                height: 100%;
+            }
+			
+			#tmp{
+				position: fixed;
+				top: 0;
+				left: 0; 
+				right: 0;
+				bottom: 0;
+				padding: 3em;
+				background-color: rgba(0,0,0,.5);
+				backdrop-filter: blur(5px);
+				display: none;
+			}
+		</style>
+	</head>
+	<body id="body">
+	    <div id="container" style="color: black;"></div>
+    	
+		
+		
+		<!--customhtml--><div class='customhotspot' id='cocpitfinal'></div><div class='customhotspot' id='yatchtwo'></div><div class='customhotspot' id='yatchthree'></div><div class='customhotspot' id='yatchfour'></div><!--customhtml-end-->
+		
+		<div id="tmp">
+			<div style="width: 100%; height: 100%; overflow: hidden; overflow-y: auto; box-sizing: border-box; position: relative;" id="tmpcontent"></div>
+			<div class="mediaclosebutton" onclick="hideTemp()"><i class="fa fa-times-circle"></i></div>
+		</div>
+
+		<div id="loading" class="fullwrapper" style="display: table; width: 100%; height: 100%;">
+    		<div style="display: table-cell; vertical-align: middle; text-align: center; color: white; font-size: 30px; padding: 50px;">
+    			<!--loadingtext-->Loading...<!--loadingtext-end-->
+    		</div>
+    	</div>
+		
+    	<script>
+			
+            var container = document.querySelector( '#container' );
+			/*panolens*/
+var viewer = new PANOLENS.Viewer( { container: container , controlBar: false,  output: 'console' , autoHideInfospot: false, } );
+/*panolens-end*/
+			
+			viewer.addUpdateCallback(function(){});
+			
+			/*panoramas*/
+var cocpitfinal = new PANOLENS.ImagePanorama( "panoramas/cocpitfinal.jpg" );
+			cocpitfinal.addEventListener('progress', function(e){
+				$("#loading").show();
+			});
+			cocpitfinal.addEventListener('load', function(e){
+				//$("#loading").fadeOut();
+			});
+			cocpitfinal.addEventListener('click', function(e){
+			});
+
+var infospotcocpitfinal0 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotcocpitfinal0.position.set( 4797.55, -123.64, 1368.59 );
+					cocpitfinal.add(infospotcocpitfinal0);
+infospotcocpitfinal0.addEventListener('click', function(){
+ChangePanorama('yatchfour');
+});
+viewer.add( cocpitfinal );
+var yatchtwo = new PANOLENS.ImagePanorama( "panoramas/yatchtwo.jpg" );
+			yatchtwo.addEventListener('progress', function(e){
+				$("#loading").show();
+			});
+			yatchtwo.addEventListener('load', function(e){
+				//$("#loading").fadeOut();
+			});
+			yatchtwo.addEventListener('click', function(e){
+			});
+
+var infospotyatchtwo0 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotyatchtwo0.position.set( -3507.04, -330.50, 3536.00 );
+					yatchtwo.add(infospotyatchtwo0);
+infospotyatchtwo0.addEventListener('click', function(){
+ChangePanorama('yatchthree');
+});
+var infospotyatchtwo1 = new PANOLENS.Infospot( 512, hotspotIcons[5].data, true );
+					infospotyatchtwo1.position.set( 4216.50, 807.34, 2552.93 );
+					yatchtwo.add(infospotyatchtwo1);
+infospotyatchtwo1.addEventListener('click', function(){
+ChangePanorama('yatchfour');
+});
+viewer.add( yatchtwo );
+var yatchthree = new PANOLENS.ImagePanorama( "panoramas/yatchthree.jpg" );
+			yatchthree.addEventListener('progress', function(e){
+				$("#loading").show();
+			});
+			yatchthree.addEventListener('load', function(e){
+				//$("#loading").fadeOut();
+			});
+			yatchthree.addEventListener('click', function(e){
+			});
+
+var infospotyatchthree0 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotyatchthree0.position.set( 4827.76, 695.58, 1076.64 );
+					yatchthree.add(infospotyatchthree0);
+infospotyatchthree0.addEventListener('click', function(){
+ChangePanorama('yatchfour');
+});
+viewer.add( yatchthree );
+var yatchfour = new PANOLENS.ImagePanorama( "panoramas/yatchfour.jpg" );
+			yatchfour.addEventListener('progress', function(e){
+				$("#loading").show();
+			});
+			yatchfour.addEventListener('load', function(e){
+				//$("#loading").fadeOut();
+			});
+			yatchfour.addEventListener('click', function(e){
+			});
+
+var infospotyatchfour0 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotyatchfour0.position.set( -173.37, -2464.95, 4336.74 );
+					yatchfour.add(infospotyatchfour0);
+infospotyatchfour0.addEventListener('click', function(){
+ChangePanorama('yatchtwo');
+});
+var infospotyatchfour1 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotyatchfour1.position.set( -4881.28, -519.32, -904.93 );
+					yatchfour.add(infospotyatchfour1);
+infospotyatchfour1.addEventListener('click', function(){
+ChangePanorama('8');
+ChangePanorama('cocpitfinal');
+});
+viewer.add( yatchfour );
+$(document).ready(function(){ ChangePanorama('cocpitfinal'); });
+
+/*panoramas-end*/
+            
+			
+			function hideTemp(){
+				$("#tmp").fadeOut();
+				setTimeout(function(){
+					$("#tmpcontent").html("");
+				},1000);
+			}
+			
+			function showMedia(type, content){
+				switch(type){
+					case 1 :
+						//Image
+						$("#tmpcontent").html("<img src='"+content+"' style='width: 100%;'>");
+						$("#tmp").fadeIn();
+						break;
+					case 2 :
+						//Video
+						$("#tmpcontent").html("<video id='webvideo' controls autoplay style='width: 100%; height: 100%;'><source src='" +content+ "' type='video/mp4'> Your browser does not support the video tag. </video>");
+						$("#tmp").fadeIn();
+						break;
+					case 3 :
+						//Audio
+						$("#tmpcontent").html("<audio controls style='width: 100%;'><source src='"+content+"' type='audio/ogg'>Your browser does not support the audio tag.</audio>");
+						$("#tmp").fadeIn();
+						break;
+					case 4 :
+						//PDF
+						$("#tmpcontent").html("<iframe src='pdfjs/web/viewer.html?file=../../"+content+"' style='width: 100%; height: 99%;'></iframe>");
+						$("#tmp").fadeIn();
+						break;
+				}
+			}
+			
+			
+			
+			//Update Callback
+			viewer.addUpdateCallback(function(){
+				
+				/*viewerupdatecallback*/
+if(viewer.panorama == cocpitfinal){
+}
+
+if(viewer.panorama == yatchtwo){
+}
+
+if(viewer.panorama == yatchthree){
+}
+
+if(viewer.panorama == yatchfour){
+}
+/*viewerupdatecallback-end*/
+				
+				
+			});
+			
+			
+			
+			var hotspotsvisible = true;
+			function ShowMyInfospot(hs, elid){
+				var thehs = toScreenPosition(hs);
+				if(thehs.z < 1){
+					$("#" + elid).css({
+						"top" : (thehs.y - ($("#" + elid).height()/2)) + "px",
+						"left" : (thehs.x - ($("#" + elid).width()/2)) + "px",
+					});
+					if(hotspotsvisible)
+						$("#" + elid).show();
+				}else{
+					$("#" + elid).hide();
+				}
+				
+			}
+			
+			function toScreenPosition(obj)
+			{
+				var vector = new THREE.Vector3();
+				var widthHalf = 0.5 * innerWidth;
+				var heightHalf = 0.5 * innerHeight;
+				
+				//obj.updateMatrixWorld();				
+				vector.setFromMatrixPosition(obj.matrixWorld);
+				
+				
+				vector.project(viewer.camera);
+
+				vector.x = ( vector.x * widthHalf ) + widthHalf;
+				vector.y = - ( vector.y * heightHalf ) + heightHalf;
+
+				
+				return { 
+					x: vector.x,
+					y: vector.y,
+					z: vector.z,
+				};
+
+			};
+			
+			var currentPanorama;
+			function ChangePanorama(panorama){
+				currentPanorama = panorama;
+				HideInfospots(); 
+				$("#loading").fadeIn();
+				//$(".customhotspot").fadeOut();
+				setTimeout(function(){
+					viewer.setPanorama(window[panorama]);
+				}, 100);
+				setTimeout(function(){
+					$("#" + panorama).fadeIn();
+					$("#loading").fadeOut();
+				}, 1000);
+				
+			}
+			
+			
+			
+			function HideInfospots(){
+				$(".customhotspot").fadeOut();
+			}
+
+			/*customjs*//*customjs-end*/
+        </script>
+	</body>
+</html>
