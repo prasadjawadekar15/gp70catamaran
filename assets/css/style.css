@@ -8,7 +8,7 @@ input:focus {
 
 body {
 	font-size: 1rem;
-	font-family: Sen, sans-serif;
+	  font-family: 'Muli'  !important;
 	font-weight: 400;
 	line-height: 1.5;
 	color: #121730
@@ -53,7 +53,7 @@ a:hover {
 	max-width: 100%;
 }
 .thm-h h2 {
-	font-family: Sen;
+	 font-family: 'Muli';
 	letter-spacing: .03em;
 	margin-bottom: .3em;
 	text-transform: uppercase;
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .thm-h h4 {
-	font-family: Sen;
+	 font-family: 'Muli';
 	text-transform: uppercase;
 	font-size: 1rem;
 	font-weight: 200;
@@ -416,7 +416,7 @@ a:hover {
 }
 
 .header-home-4 h1 {
-	font-family: Sen;
+	 font-family: 'Muli';
 	font-size: 7vh;
 	border-bottom: 1px solid #fff;
 	padding-bottom: 5vh
@@ -493,7 +493,7 @@ a:hover {
 
 .menu-1>div {
 	transition: all .5s ease-in;
-	/*border-bottom: 1px solid rgba(255, 255, 255, .3)*/
+	border-bottom: 1px solid rgba(255, 255, 255, 0)
 }
 
 .menu-1.menu-1-scrolled>div {
@@ -595,7 +595,7 @@ a:hover {
 .menu-1 .nb-dark,
 .menu-1 .nb-light {
 	display: none;
-	max-width: 80px;
+	max-width: 120px;
 	margin-right: 10px;
 	transition: all .3s
 }
@@ -606,7 +606,7 @@ a:hover {
 
 .menu-1.menu-1-scrolled .nb-dark {
 	display: inline-block;
-	min-width: 40px;
+	max-width: 80px;
 	transition: all .3s
 }
 
@@ -718,9 +718,13 @@ a:hover {
 	background: 0 0;
 	border: none;
 	border-radius: 0;
-	font-size: 1rem;
-	font-family: Sen;
-	line-height: 1.3em;
+	
+	font-family: 'Muli';
+ 
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 25px;
+	
 	display: block;
 	padding-top: 15px;
 	padding-bottom: 29px;
@@ -761,7 +765,7 @@ a:hover {
 }
 
 .menu-1-inner a:not(.dropdown-item) {
-	font-family: Sen;
+	font-family: 'Muli';
 	width: auto;
 	text-align: center;
 	height: 100%;
@@ -1007,7 +1011,8 @@ text-sha .sidenav .dropdown a {
 	padding-left: 20px;
 	font-size: 14px;
 	font-weight: 600;
-	opacity: .5
+	opacity: .5;
+font-family:'Muli';
 }
 
 .sidenav .dropdown a:active,
@@ -1194,7 +1199,7 @@ text-sha .sidenav .dropdown a {
 }
 
 .hh3 .header-cont h1 {
-	font-family: Sen;
+	font-family: 'Muli';
 	font-weight: 700;
 	font-size: 8vh
 }
@@ -1884,7 +1889,7 @@ text-sha .sidenav .dropdown a {
 	font-style: italic;
 	color: #fff;
 	padding: 15px 0 0;
-	font-family: Sen
+	font-family: 'Muli'
 }
 
 .compass .navigation_a a::after {
@@ -1993,7 +1998,7 @@ text-sha .sidenav .dropdown a {
 	border: none;
 	border-radius: 0;
 	font-size: 1rem;
-	font-family: Sen
+	font-family: 'Muli'
 }
 
 .dropdown a:active,
@@ -2024,7 +2029,7 @@ text-sha .sidenav .dropdown a {
 }
 
 .menu-2-inner a:not(.dropdown-item) {
-	font-family: Sen;
+	font-family: 'Muli';
 	width: 100%;
 	text-align: center;
 	height: 100%;
@@ -2249,7 +2254,7 @@ text-sha .sidenav .dropdown a {
 	font-size: 1.5rem;
 	border-top: 1px solid #dfdfdf;
 	border-bottom: 1px solid #dfdfdf;
-	font-family: Sen
+	font-family: 'Muli';
 }
 
 .main-section-menu li a span {
@@ -2391,7 +2396,7 @@ text-sha .sidenav .dropdown a {
 	font-size: 1.4rem;
 	text-align: center;
 	line-height: 2em;
-	font-family: Sen
+	font-family: 'Muli';
 }
 
 .btn-wrap-center {
@@ -2812,7 +2817,7 @@ text-sha .sidenav .dropdown a {
 
 .h-add-inner h3 {
 	font-size: 4rem;
-	font-family: Sen;
+	font-family: 'Muli';
 	letter-spacing: .2em;
 	text-transform: uppercase;
 	color: #3aa6f5
@@ -2820,7 +2825,7 @@ text-sha .sidenav .dropdown a {
 
 .h-add-inner h4 {
 	font-size: 1.3rem;
-	font-family: Sen;
+	font-family: 'Muli';
 	letter-spacing: .2em;
 	text-transform: uppercase
 }
@@ -2971,7 +2976,7 @@ text-sha .sidenav .dropdown a {
 
 .slide-cont h3,
 .slide-cont p {
-	font-family: Sen
+	font-family: 'Muli';
 }
 
 .slide-cont h3 {
@@ -3025,7 +3030,9 @@ text-sha .sidenav .dropdown a {
 .owl-carousel .owl-nav button.owl-prev {
 	padding: 15px
 }
-
+footer{
+font-family:'Muli';
+}
 footer p {
 	font-size: 1rem;
 	margin-bottom: 1em
@@ -3467,7 +3474,7 @@ footer .social li a {
 	}
 	.h-add-inner h3 {
 		font-size: 2rem;
-		font-family: Sen;
+		font-family: 'Muli';
 		letter-spacing: .2em;
 		text-transform: uppercase;
 		color: #3aa6f5
@@ -4285,7 +4292,7 @@ div.container-fluid .y-arrow_line img {
 	font-size: 1.4rem;
 	text-align: left;
 	line-height: 2em;
-	font-family: Sen
+	font-family: 'Muli'
 }
 
 .h2-book-section .home-about {
@@ -4377,7 +4384,7 @@ div.container-fluid .y-arrow_line img {
 }
 
 #main-2 .thm-h h2 {
-	font-family: Sen;
+	font-family: 'Muli';
 	letter-spacing: .03em;
 	margin-bottom: .3em;
 	text-transform: uppercase;
@@ -4541,7 +4548,7 @@ div.container-fluid .y-arrow_line img {
 }
 
 .thm-h-3.thm-h h4 {
-	font-family: Sen;
+	font-family: 'Muli';
 	letter-spacing: .03em;
 	margin-bottom: .3em;
 	text-transform: uppercase;
@@ -7312,7 +7319,7 @@ table {
 .y-blog_detail_bloger_img .y-glyp_icon {
 	background: #303030 none repeat scroll 0 0;
 	color: #fff;
-	fony-size: 22px
+	font-size: 22px
 }
 
 .y-blog_detail_info h2 {
@@ -9946,8 +9953,7 @@ div.container .y-arrow_line i:hover {
 @media screen and (max-width:767px) {
 	.menu-1 .nb-dark,
 	.menu-1 .nb-light {
-		min-width: 60px;
-min-height:50px;
+		max-width: 60px
 	}
 	.navbar-brand img {
 		max-height: 30px
@@ -9964,8 +9970,7 @@ min-height:50px;
 	.menu-1-inner>div.nav-search {
 		-ms-flex: 0 0 75%;
 		flex: 0 0 75%;
-		max-width: 75%;
-margin-top:20px;
+		max-width: 75%
 	}
 	.hamburger {
 		padding: 5px
@@ -9973,9 +9978,7 @@ margin-top:20px;
 	.navbar-toggler {
 		padding: 0
 	}
-	.nav-search .login_but {
-		padding: 5px 15px
-	}
+	
 	.nav-search .searchclick {
 		padding: 0 15px 0 0
 	}
