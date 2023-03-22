@@ -12,6 +12,8 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #121730
+
+ 
 }
 
 li,
@@ -722,9 +724,9 @@ a:hover {
 	font-family: 'Muli';
  
                 font-weight: 300;
-                font-size: 16px;
+                font-size: 13px;
                 line-height: 25px;
-	
+	 text-transform: uppercase;
 	display: block;
 	padding-top: 15px;
 	padding-bottom: 29px;
@@ -1025,7 +1027,8 @@ font-family:'Muli';
 
 .sidenav_cat {
 	margin-bottom: 30px;
-	color: rgba(255, 255, 255, .5)
+	color: rgba(255, 255, 255, .5);
+font-size:15px;
 }
 
 .sidenav_cat li {
